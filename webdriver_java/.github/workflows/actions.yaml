@@ -1,11 +1,10 @@
-#Event name
 name: on_push
-#When the event should run
+
 on:
   push:
     branch:
-      - "**" # This will run on all branches
-#What jobs to execute
+      - "**" # This will run on all branches, and must be quoted to be handled by yaml
+
 jobs:
 
   build_and_test:
@@ -13,4 +12,4 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-#What steps within each job
+      
